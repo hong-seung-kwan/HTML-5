@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>하위선택자</title>
+  <style>
+    /* 하위 선택자: 공백 사용 */
+    /* div 태그의 자손이면서 class = orange를 가진 태그 선택 */
+    div  .orange{
+      color: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <ul>
+      <li>사과</li>
+      <li>딸기</li>
+      <li class="orange">오렌지</li>
+    </ul>
+    <div>당근</div>
+    <p>토마토</p>
+    <span class="orange">오렌지</span>
+  </div>
+  <!-- div 태그의 자손이 아니므로 적용 안됨 -->
+  <span class="orange">오렌지</span>
+</body>
+</html>

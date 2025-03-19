@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 형제 선택자 */
+    /* +: 바로 다음 형제 1개만 선택 */
+    /* class=orange를 가진 요소 바로 뒤에 있는 li를 선택 */
+    /* .orange + li {
+      color: red;
+    } */
+    /* ~: 뒤에 있는 모든 형제를 선택 */
+     /* class=orange를 가진 요소 뒤에 있는 li를 선택 */
+    /* .orange ~ li {
+      color: red;
+    } */
+     /* class=tomato를 가진 요소 바로 뒤에 있는 span 1개만 선택 */
+    /* .tomato + span{
+      color: tomato;
+    } */
+     /* class=tomato를 가진 요소 뒤에 있는 모든 span 선택 */
+     .tomato ~ span{
+      color: tomato;
+     }
+  </style>
+</head>
+<body>
+  <!-- <div>
+    <ul>
+      <li>사과</li>
+      <li>딸기</li>
+      <li class="orange">오렌지</li>
+      <li>망고</li>
+      <li>사과</li>
+    </ul>
+    <div>당근</div>
+    <p>토마토</p>
+    <span>오렌지</span>
+  </div>
+  <span>오렌지</span> -->
+
+  <div>당근</div>
+  <p class="tomato">토마토</p>
+  <span>오렌지1</span>
+  <span>오렌지2</span>
+</body>
+</html>
