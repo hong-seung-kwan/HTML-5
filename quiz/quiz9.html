@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=\, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    li::before {
+      content: '(프로그래밍)';
+      color: blue;
+    }
+    /* 이름과 이메일 뒤에 '*' 추가 */
+    .after::after{
+      content: ' *';
+      color: red;
+      font-weight: bold;
+    }
+    button::before{
+      content: '클릭하세요! ';
+      color: green;
+      font-weight: bold;
+
+    }
+  </style>
+</head>
+
+<body>
+  <h2>해야 할 일</h2>
+
+  <ul>
+    <li>HTML 연습</li>
+    <li>CSS 공부</li>
+    <li>JavaScript 배우기</li>
+  </ul>
+
+  <h2>폼 입력</h2>
+
+  <form>
+      <label class="after">이름:</label>
+      <input type="text">
+      <br><br>
+      <label class="after">이메일:</label>
+      <input type="text">
+      <br><br>
+      <label for="">나이:</label>
+      <input type="text">
+      <br><br>
+      <button>제출하기</button>
+  </form>
+</body>
+
+</html>

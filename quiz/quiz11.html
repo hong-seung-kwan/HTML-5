@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    h3 {
+      text-align: center;
+    }
+    table{
+      border-collapse: collapse;
+      width: 50%;
+      text-align: left;
+      margin: auto;
+      
+    }
+    th,td{
+      border: 1px solid;
+      padding: 10px;
+    }
+    tr:last-of-type{
+      text-align: center;
+    }
+    [type="text"]:focus {
+      color: green;
+      background-color: orange;
+    }
+    [type="email"]:focus {
+      color: blue;
+      background-color: orange;
+    }
+    [type="password"]:focus {
+      color: red;
+      background-color: orange;
+    }
+    [type="button"]:active {
+      background-color: blue;
+      color: white;
+    }
+    [type="radio"]:checked + label{
+      color: purple;
+    }
+    
+  </style>
+</head>
+<body>
+  <h3>회원가입</h3>
+  <table>
+    
+    <tr>
+      <th>이름</th>
+      <td><input type="text" placeholder="이름 입력"></td>
+    </tr>
+    <tr>
+      <th>이메일</th>
+      <td><input type="email" placeholder="이메일 입력"></td>
+    </tr>
+    <tr>
+      <th>비밀번호</th>
+      <td><input type="password" placeholder="비밀번호 입력"></td>
+    </tr>
+    <tr>
+      <th>이메일</th>
+      <td>
+        <input type="radio" name="gen">
+        <label>남성</label>
+        <input type="radio" name="gen">
+        <label>여성</label>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><input type="button" value="가입하기"></td>
+    </tr>
+  </table>
+</body>
+</html>

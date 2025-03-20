@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* :hover 이미지 위에 마우스를 올리면 CSS 적용 */
+    img:hover {
+      border: 3px solid blue;
+    }
+    /* :active 버튼을 클릭하면 CSS 적용 */
+    input[type=button]:active {
+      background-color: red;
+      color: white;
+    }
+    /* :focus 입력필드에 포커스가 되면 CSS 적용 */
+    input[type=text]:focus {
+      background-color: gray;
+    }
+  </style>
+</head>
+<body>
+  <p>이미지 위로 마우스를 올려보세요</p>
+  <img src="../images/귤.png" alt="">
+  <p>버튼을 클릭해보세요</p>
+  <input type="button" value="버튼">
+  <p>입력창을 클릭해보세요</p>
+  <input type="text" placeholder="여기에 입력하세요">
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 속성 선택자 */
+    /* value=안녕하세요 속성을 가진 요소를 선택 */
+    [value="안녕하세요"] {
+      color: orange;
+    }
+    /* type="password" 속성을 가진 요소를 선택 */
+    [type="password"] {
+      color: blue;
+    }
+    /* disabled 속성을 가진 요소 선택 */
+    [disabled] {
+     color: red; 
+    }
+  </style>
+</head>
+<body>
+  <input type="text" value="안녕하세요"> <br>
+  <input type="password" value="1234"> <br>
+  <!-- disabled: 필드 비활성화 -->
+  <input type="text" value="ABCD" disabled>
+</body>
+</html>

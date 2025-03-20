@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* h태그는 블록요소이므로 너비가 화면 만큼 늘어남 */
+    h3 {
+      text-align: center;
+    }
+    table {
+      /* 테이블 화면 가운데 정렬 */
+      margin: 0 auto;
+      border-collapse: collapse;
+      width: 50%; /* 화면에 50% */
+      border: 3px solid black;
+    }
+    th,td {
+      border: 1px solid;
+      padding: 10px;
+    }
+    /* 이름, 이메일, 패스워드에 각각 */
+    #name {
+      color: green;
+    }
+    #mail {
+      color: blue;
+    }
+    #pw {
+      color: red;
+    }
+    /* 모든 입력필드 포커스되면 배경식 변경 */
+    /* input태그선택자 + :focus 상태선택자 */
+    input:focus {
+      background-color: orange;
+    }
+    /* 라디오버튼을 선택하면 그 옆에 있는 라벨을 강조 */
+    /* 1. 라디오 버튼 검색 */
+    /* 2. 체크된 라디오 버튼 검색 */
+    /* 3. 그옆에 라벨 검색 */
+    
+    /* 1. 속성 선택자(라디오버튼) */
+    /* 2. 상태 선택자 (선택된) */
+    /* 3. 형제 선택자 (+ ~) */
+    input[type="radio"]:checked + label  {
+      font-weight: bold;
+      color: purple;
+    }
+    /* 버튼을 셀의 가운데 정렬 */
+    /* text-align: 텍스트 정렬 */
+    #td_register {
+      text-align: center;
+    }
+    /* 버튼을 클릭했을때 배경색 변경 */
+    /* 상태선택자 사용 */
+    /* :active 버튼을 누르고 있는 동안 */
+    button:active {
+      background-color: blue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  
+  <h3>회원가입</h3>
+  <!-- 이름,이메일,비번,성별은 제목 -->
+  <table>
+    <tr>
+      <th>이름</th>
+      <!-- 각 입력필드에 id 또는 class -->
+      <td><input type="text" placeholder="이름 입력" id="name"></td>
+    </tr>
+    <tr>
+      <th>이메일</th>
+      <td><input type="email" placeholder="이메일 입력" id="mail"></td>
+    </tr>
+    <tr>
+      <th>비밀번호</th>
+      <td><input type="password" placeholder="비밀번호 입력" id="pw"></td>
+    </tr>
+    <tr>
+      <th>성별</th>
+      <td>
+        <!-- name을 사용하여 그룹화 -->
+      <input type="radio" id="male" name="gender">
+      <label for="male">남성</label>
+      <input type="radio" id="female" name="gender">
+      <label for="female">여성</label>
+      </td>
+    </tr>
+    <tr>
+      <!-- 마지막 행은 열 병합 -->
+       <td colspan="2" id="td_register">
+        <button>가입하기</button>
+       </td>
+    </tr>
+  </table>
+
+</body>
+</html>
